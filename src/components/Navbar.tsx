@@ -27,6 +27,18 @@ const Navbar = () => {
 						</li>
 					</ul>
 				</li>
+				<li className="relative group p-4">
+					<span className="cursor-pointer whitespace-nowrap" role="button">
+						🚀 Advance Projects <IoIosArrowDown className="inline" />
+					</span>
+					<ul className="absolute left-0 hidden mt-2 bg-gray-800 text-white p-4 space-y-2 group-hover:block">
+						<li>
+							<Link to="/advance-filtering" className="whitespace-nowrap">
+								🚀 Advance Filtering
+							</Link>
+						</li>
+					</ul>
+				</li>
 			</ul>
 		</nav>
 	)
