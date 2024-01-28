@@ -5,15 +5,15 @@ import Sidebar from "./Sidebar/Sidebar"
 import Products from "./Products/Products"
 import Recommended from "./Recommended/Recommended"
 
-const Filtering = () => {
+const App = () => {
 	return (
 		<>
-			<Nav />
 			<Sidebar />
-			<Products />
+			<Nav />
 			<Recommended />
+			<Products />
 		</>
 	)
 }
 
-export default Filtering
+export default App

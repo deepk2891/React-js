@@ -1,6 +1,8 @@
 import React from "react"
 import "./Nav.css"
-import { AiOutlineShoppingCart, AiOutlineUserAdd, FiHeart, FaBars } from "react-icons/ai"
+import { AiOutlineShoppingCart, AiOutlineUserAdd } from "react-icons/ai"
+import { FaBars } from "react-icons/fa"
+import { FiHeart } from "react-icons/fi"
 
 const Nav = () => {
 	return (
