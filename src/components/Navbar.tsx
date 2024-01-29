@@ -25,6 +25,11 @@ const Navbar = () => {
 								Assignment-2 <FaStaylinked className="inline" /> Counter
 							</Link>
 						</li>
+						<li>
+							<Link to="/assignment-3" className="whitespace-nowrap">
+								Assignment-3 <FaStaylinked className="inline" /> Input Show Data
+							</Link>
+						</li>
 					</ul>
 				</li>
 				<li className="relative group p-4">
