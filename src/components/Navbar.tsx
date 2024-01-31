@@ -27,7 +27,12 @@ const Navbar = () => {
 						</li>
 						<li>
 							<Link to="/assignment-3" className="whitespace-nowrap">
-								Assignment-3 <FaStaylinked className="inline" /> Input Show Data
+								Assignment-3 <FaStaylinked className="inline" /> CRUD
+							</Link>
+						</li>
+						<li>
+							<Link to="/assignment-4" className="whitespace-nowrap">
+								Assignment-4 <FaStaylinked className="inline" /> Review & Comment
 							</Link>
 						</li>
 					</ul>
