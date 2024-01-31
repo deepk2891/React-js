@@ -14,7 +14,7 @@ const Navbar = () => {
 					<span className="cursor-pointer whitespace-nowrap" role="button">
 						Assignments <IoIosArrowDown className="inline" />
 					</span>
-					<ul className="absolute left-0 hidden mt-2 bg-gray-800 text-white p-4 space-y-2 group-hover:block">
+					<ul className="absolute left-0 hidden mt-2 bg-gray-800 text-white p-4 space-y-2 group-hover:block z-10">
 						<li>
 							<Link to="/assignment-1" className="whitespace-nowrap">
 								Assignment-1 <FaStaylinked className="inline" /> Header & Footer
@@ -32,7 +32,7 @@ const Navbar = () => {
 						</li>
 						<li>
 							<Link to="/assignment-4" className="whitespace-nowrap">
-								Assignment-4 <FaStaylinked className="inline" /> Review & Comment
+								Assignment-4 <FaStaylinked className="inline" /> Feedback Form
 							</Link>
 						</li>
 					</ul>
