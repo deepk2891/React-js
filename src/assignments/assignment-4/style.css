@@ -1,0 +1,15 @@
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.on {
+    color: #FFDF00;
+}
+.off {
+    color: #4e4e4e;
+}
+input[type="radio"] {
+    visibility: hidden;
+}

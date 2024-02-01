@@ -1,5 +1,6 @@
 import React from "react"
 import { FaStar } from "react-icons/fa"
+import "./style.css"
 
 const Starrating: React.FC<{ value: number; onChange: (value: number) => void }> = ({ value, onChange }) => {
 	return (
