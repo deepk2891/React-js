@@ -10,9 +10,9 @@ const data = [
 	},
 	{
 		id: 2,
-		name: "Bacon Cheeseburger",
+		name: "Vada pav",
 		category: "burger",
-		image: "https://images.unsplash.com/photo-1553979459-d2229ba7433b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGJ1cmdlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=1400&q=60",
+		image: "https://plus.unsplash.com/premium_photo-1668143358351-b20146dbcc02?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dmVnJTIwYnVyZ2VyfGVufDB8fDB8fHww",
 		price: 499,
 	},
 	{
@@ -88,29 +88,29 @@ const data = [
 	{
 		id: 13,
 		name: "Wings",
-		category: "chicken",
-		image: "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2hpY2tlbiUyMGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+		category: "pasta",
+		image: "https://images.unsplash.com/photo-1611270629569-8b357cb88da9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 		price: 499,
 	},
 	{
 		id: 14,
 		name: "Baked Chicken",
-		category: "chicken",
-		image: "https://images.unsplash.com/photo-1594221708779-94832f4320d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2hpY2tlbiUyMGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+		category: "pasta",
+		image: "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBhc3RhfGVufDB8fDB8fHww",
 		price: 749,
 	},
 	{
 		id: 15,
 		name: "Chicken Tenders",
-		category: "chicken",
-		image: "https://images.unsplash.com/photo-1562967914-608f82629710?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNoaWNrZW4lMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+		category: "pasta",
+		image: "https://images.unsplash.com/photo-1608897013039-887f21d8c804?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cGFzdGF8ZW58MHx8MHx8fDA%3D",
 		price: 999,
 	},
 	{
 		id: 16,
 		name: "Chicken Kabob",
-		category: "chicken",
-		image: "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNoaWNrZW4lMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+		category: "pasta",
+		image: "https://media.istockphoto.com/id/862762848/photo/pasta-in-a-cast-iron-pan-shot-on-rustic-wooden-table.webp?b=1&s=170667a&w=0&k=20&c=u7Kpzb0C5z5mlyAXJ297bg-tiyFxmQikRDHRm0Jdm64=",
 		price: 1099,
 	},
 ]
@@ -173,8 +173,8 @@ const Food = () => {
 							<button onClick={() => filterType("salad")} className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white">
 								Salads
 							</button>
-							<button onClick={() => filterType("chicken")} className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white">
-								Chicken
+							<button onClick={() => filterType("pasta")} className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white">
+								Pasta
 							</button>
 						</div>
 					</div>
