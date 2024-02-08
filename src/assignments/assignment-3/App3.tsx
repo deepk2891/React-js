@@ -5,6 +5,7 @@ import { MdDeleteOutline } from "react-icons/md"
 import Employees from "./Employees"
 import { Link, useNavigate } from "react-router-dom"
 import { v4 as uuid } from "uuid"
+import Crud1 from "./Crud1"
 
 const App3 = () => {
 	function Add() {
@@ -132,6 +133,7 @@ const App3 = () => {
 						</table>
 					</div>
 				</div>
+				<Crud1 />
 			</div>
 		)
 	}
