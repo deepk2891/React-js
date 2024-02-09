@@ -40,6 +40,12 @@ const Navbar = () => {
 								Project <FaStaylinked className="inline" /> Product Filter
 							</Link>
 						</li>
+						<li>
+							<Link to="/assignment-6" className="whitespace-nowrap">
+								Assignment-6
+								<FaStaylinked className="inline" /> CRUD LocalStorage
+							</Link>
+						</li>
 					</ul>
 				</li>
 			</ul>

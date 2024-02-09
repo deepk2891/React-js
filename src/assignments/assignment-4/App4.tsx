@@ -64,9 +64,9 @@ const App4 = () => {
 						<label className="leading-7 text-sm text-gray-600">Rating</label>
 						{[1, 2, 3, 4, 5].map((index) => (
 							<label key={index} className={`star ${index <= formData.rating ? "on" : "off"}`}>
-								<input type="radio" name="rating" value={index} checked={index === formData.rating} onChange={() => setFormData({ ...formData, rating: index })} />
+								<input type="radio" name="rating" className="hidden" value={index} checked={index === formData.rating} onChange={() => setFormData({ ...formData, rating: index })} />
 								<span className="star text-2xl">
-									<FaStar className="inline" />
+									<FaStar className="inline mx-1" />
 								</span>
 							</label>
 						))}

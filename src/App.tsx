@@ -7,6 +7,7 @@ import App2 from "./assignments/assignment-2/App2"
 import App3 from "./assignments/assignment-3/App3"
 import App4 from "./assignments/assignment-4/App4"
 import App5 from "./assignments/assignment-5/App5"
+import App6 from "./assignments/assignment-6/App6"
 
 import ListGroup from "./components/ListGroup"
 import ParentComponent from "./components/ParentComponent"
@@ -28,6 +29,7 @@ const App = () => {
 				<Route path="/assignment-3" element={<App3 />} />
 				<Route path="/assignment-4" element={<App4 />} />
 				<Route path="/assignment-5" element={<App5 />} />
+				<Route path="/assignment-6" element={<App6 />} />
 				{/* Add more routes for other assignments if needed */}
 				<Route
 					path="/"

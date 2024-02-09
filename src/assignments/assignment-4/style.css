@@ -10,6 +10,6 @@ button {
 .off {
     color: #4e4e4e;
 }
-input[type="radio"] {
+/* input[type="radio"] {
     visibility: hidden;
-}
+} */
