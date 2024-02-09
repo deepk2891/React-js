@@ -2,43 +2,58 @@ import React, { useState, useEffect } from "react"
 import { FaRegEdit } from "react-icons/fa"
 import { MdDeleteOutline } from "react-icons/md"
 
-const Crud1 = () => {
-	const [input, setInput] = useState({})
+const App6 = () => {
+	const [input, setInput] = useState({
+		name: "",
+		email: "",
+		gender: "",
+		hobbies: [],
+		course: "",
+		address: "",
+	})
 	const [edit, setEdit] = useState(false)
 	const [id, setId] = useState()
-	const [products, setProduct] = useState(() => {
-		return JSON.parse(localStorage.getItem("products")) || []
+	const [users, setUser] = useState(() => {
+		return JSON.parse(localStorage.getItem("users")) || []
 	})
 
 	useEffect(() => {
 		console.log("hello")
-		localStorage.setItem("products", JSON.stringify(products))
-	}, [products])
+		localStorage.setItem("users", JSON.stringify(users))
+	}, [users])
 
 	const handleSubmit = (e) => {
 		e.preventDefault()
 		if (edit) {
-			var pro = [...products]
+			var pro = [...users]
 			pro[id] = input
 			setEdit(false)
-			setProduct(pro)
+			setUser(pro)
 		} else {
-			setProduct([...products, input])
+			setUser([...users, input])
 		}
 		setInput({})
 	}
 
 	const handleChange = (e) => {
-		setInput({ ...input, [e.target.name]: e.target.value })
+		if (e.target.type === "checkbox") {
+			const { value, checked } = e.target
+			setInput((prevInput) => ({
+				...prevInput,
+				hobbies: checked ? [...prevInput.hobbies, value] : prevInput.hobbies.filter((hobby) => hobby !== value),
+			}))
+		} else {
+			setInput({ ...input, [e.target.name]: e.target.value })
+		}
 	}
 
 	const handleDelete = (id) => {
-		var pro = [...products]
+		var pro = [...users]
 		pro.splice(id, 1)
-		setProduct(pro)
+		setUser(pro)
 	}
 	const handleEdit = (id) => {
-		setInput(products[id])
+		setInput(users[id])
 		setEdit(true)
 		setId(id)
 	}
@@ -66,31 +81,48 @@ const Crud1 = () => {
 								onChange={handleChange}
 								className="block w-full mb-4 p-2 border border-gray-500 rounded-none focus:ring focus:ring-indigo-300 focus:outline-none"
 							/>
-							<div className="flex items-center flex-wrap mb-4">
+							<input
+								type="number"
+								name="password"
+								placeholder="Enter your Password"
+								value={input.password || ""}
+								onChange={handleChange}
+								className="block w-full mb-4 p-2 border border-gray-500 rounded-none focus:ring focus:ring-indigo-300 focus:outline-none"
+							/>
+							{/* <div className="flex items-center flex-wrap mb-4">
 								<label className="mr-4">Gender : </label>
 								<label>
-									<input type="radio" id="male" name="gender" value="Male" className="mr-1 incline-block" /> Male
+									<input onChange={handleChange} checked={input.gender === "Male"} type="radio" id="male" name="gender" value="Male" className="mr-1 incline-block" /> Male
 								</label>
 								<label>
-									<input type="radio" id="female" name="gender" value="Female" className="ml-4 mr-1 incline-block" /> Female
+									<input onChange={handleChange} checked={input.gender === "Female"} type="radio" id="female" name="gender" value="Female" className="ml-4 mr-1 incline-block" />{" "}
+									Female
 								</label>
 							</div>
 							<div className="mb-4">
 								<div className="flex items-center flex-wrap">
 									<label className="mr-4">Hobbies : </label>
 									<label className="mr-4">
-										<input type="checkbox" id="driving" name="hobbies" value="Driving" className="mr-1" /> Driving
+										<input type="checkbox" onChange={handleChange} checked={input.hobbies.includes("Driving")} id="driving" name="hobbies" value="Driving" className="mr-1" />{" "}
+										Driving
 									</label>
 									<label className="mr-4">
-										<input type="checkbox" id="cycling" name="hobbies" value="Cycling" className="mr-1" /> Cycling
+										<input type="checkbox" onChange={handleChange} checked={input.hobbies.includes("Cycling")} id="cycling" name="hobbies" value="Cycling" className="mr-1" />{" "}
+										Cycling
 									</label>
 									<label>
-										<input type="checkbox" id="coding" name="hobbies" value="Coding" className="mr-1" /> Flying
+										<input type="checkbox" onChange={handleChange} checked={input.hobbies.includes("Coding")} id="coding" name="hobbies" value="Coding" className="mr-1" /> Flying
 									</label>
 								</div>
-							</div>
+							</div> */}
 							<div className="mb-4">
-								<select name="course" id="course" className="block w-full p-2 border border-gray-500 rounded-none focus:ring focus:ring-indigo-300 focus:outline-none">
+								<select
+									name="course"
+									onChange={handleChange}
+									value={input.course || ""}
+									id="course"
+									className="block w-full p-2 border border-gray-500 rounded-none focus:ring focus:ring-indigo-300 focus:outline-none"
+								>
 									<option value="" disabled>
 										Select a course
 									</option>
@@ -101,8 +133,11 @@ const Crud1 = () => {
 								</select>
 							</div>
 							<textarea
-								className="block h-24 w-full mb-4 p-2 border border-gray-500 rounded-none focus:ring focus:ring-indigo-300 focus:outline-none resize-none"
+								name="address"
+								className="block h-24 w-full mb-4 p-2 border border-gray-500 rounded-none focus:ring focus:ring-indigo-300 focus:outline-none"
 								placeholder="Enter your Address"
+								value={input.address || ""}
+								onChange={handleChange}
 								required
 							></textarea>
 							<button className="block w-full border border-indigo-500 text-lg py-2 px-6 bg-indigo-600 text-white hover:bg-white hover:text-indigo-400">{edit ? "UPDATE" : "ADD"}</button>
@@ -117,22 +152,22 @@ const Crud1 = () => {
 									<th className="sm:w-1/6 md:w-1/6 lg:w-1/6 xl:w-1/6 border border-gray-500 p-2">Email</th>
 									<th className="sm:w-1/6 md:w-1/6 lg:w-1/6 xl:w-1/6 border border-gray-500 p-2">Password</th>
 									<th className="sm:w-1/6 md:w-1/6 lg:w-1/6 xl:w-1/6 border border-gray-500 p-2">Gender</th>
-									<th className="sm:w-1/6 md:w-1/6 lg:w-1/6 xl:w-1/6 border border-gray-500 p-2">Course</th>
-									<th className="sm:w-1/6 md:w-1/6 lg:w-1/6 xl:w-1/6 border border-gray-500 p-2">Hobbies</th>
+									{/* <th className="sm:w-1/6 md:w-1/6 lg:w-1/6 xl:w-1/6 border border-gray-500 p-2">Course</th> */}
+									{/* <th className="sm:w-1/6 md:w-1/6 lg:w-1/6 xl:w-1/6 border border-gray-500 p-2">Hobbies</th> */}
 									<th className="sm:w-1/6 md:w-1/6 lg:w-1/6 xl:w-1/6 border border-gray-500 p-2">Address</th>
 									<th className="sm:w-1/6 md:w-1/6 lg:w-1/6 xl:w-1/6 border border-gray-500 p-2">Actions</th>
 								</tr>
 							</thead>
 							<tbody>
-								{products.map((product, index) => (
+								{users.map((user, index) => (
 									<tr key={index}>
-										<td className="sm:w-1/6 md:w-1/6 lg:w-1/6 xl:w-1/6 border border-gray-500 p-2">{product.name}</td>
-										<td className="sm:w-1/6 md:w-1/6 lg:w-1/6 xl:w-1/6 border border-gray-500 p-2">{product.email}</td>
-										<td className="sm:w-1/6 md:w-1/6 lg:w-1/6 xl:w-1/6 border border-gray-500 p-2">XXX</td>
-										<td className="sm:w-1/6 md:w-1/6 lg:w-1/6 xl:w-1/6 border border-gray-500 p-2">XXX</td>
-										<td className="sm:w-1/6 md:w-1/6 lg:w-1/6 xl:w-1/6 border border-gray-500 p-2">XXX</td>
-										<td className="sm:w-1/6 md:w-1/6 lg:w-1/6 xl:w-1/6 border border-gray-500 p-2">XXX</td>
-										<td className="sm:w-1/6 md:w-1/6 lg:w-1/6 xl:w-1/6 border border-gray-500 p-2">XXX</td>
+										<td className="sm:w-1/6 md:w-1/6 lg:w-1/6 xl:w-1/6 border border-gray-500 p-2">{user.name}</td>
+										<td className="sm:w-1/6 md:w-1/6 lg:w-1/6 xl:w-1/6 border border-gray-500 p-2">{user.email}</td>
+										<td className="sm:w-1/6 md:w-1/6 lg:w-1/6 xl:w-1/6 border border-gray-500 p-2">{user.password}</td>
+										<td className="sm:w-1/6 md:w-1/6 lg:w-1/6 xl:w-1/6 border border-gray-500 p-2">{user.course}</td>
+										{/* <td className="sm:w-1/6 md:w-1/6 lg:w-1/6 xl:w-1/6 border border-gray-500 p-2">{user.gender}</td> */}
+										{/* <td className="sm:w-1/6 md:w-1/6 lg:w-1/6 xl:w-1/6 border border-gray-500 p-2">{user.hobbies}</td> */}
+										<td className="sm:w-1/6 md:w-1/6 lg:w-1/6 xl:w-1/6 border border-gray-500 p-2">{user.address}</td>
 										<td className="sm:w-1/6 md:w-1/6 lg:w-1/6 xl:w-1/6 border border-gray-500 p-2">
 											<div className="flex justify-center">
 												<button onClick={() => handleEdit(index)} className="bordertext-lg p-2 bg-blue-600 text-white hover:bg-white hover:border-blue-500 hover:text-blue-400">
@@ -154,4 +189,4 @@ const Crud1 = () => {
 	)
 }
 
-export default Crud1
+export default App6
