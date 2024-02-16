@@ -8,6 +8,7 @@ import App3 from "./assignments/assignment-3/App3"
 import App4 from "./assignments/assignment-4/App4"
 import App5 from "./assignments/assignment-5/App5"
 import App6 from "./assignments/assignment-6/App6"
+import App7 from "./assignments/assignment-7/App7"
 
 import ListGroup from "./components/ListGroup"
 import ParentComponent from "./components/ParentComponent"
@@ -18,6 +19,7 @@ import StateFunctionalComponent from "./components/StateFunctionalComponent"
 import StateClassComponent from "./components/StateClassComponent"
 import List from "./components/List"
 import LocalStorage from "./components/LocalStorage"
+import Card1 from "./components/Card1"
 
 const App = () => {
 	return (
@@ -30,6 +32,7 @@ const App = () => {
 				<Route path="/assignment-4" element={<App4 />} />
 				<Route path="/assignment-5" element={<App5 />} />
 				<Route path="/assignment-6" element={<App6 />} />
+				<Route path="/assignment-7" element={<App7 />} />
 				{/* Add more routes for other assignments if needed */}
 				<Route
 					path="/"
@@ -46,6 +49,7 @@ const App = () => {
 							<StateClassComponent />
 							<List />
 							<LocalStorage />
+							<Card1 />
 						</>
 					}
 				/>

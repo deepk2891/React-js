@@ -46,6 +46,12 @@ const Navbar = () => {
 								<FaStaylinked className="inline" /> CRUD LocalStorage
 							</Link>
 						</li>
+						<li>
+							<Link to="/assignment-7" className="whitespace-nowrap">
+								Assignment-7
+								<FaStaylinked className="inline" /> Filter LocalStorage
+							</Link>
+						</li>
 					</ul>
 				</li>
 			</ul>
