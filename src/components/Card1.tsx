@@ -106,6 +106,225 @@ const Card1 = () => {
 						</div>
 					</div>
 				</div>
+				<div className="container mx-auto mt-10">
+					<div className="flex flex-wrap gap-6">
+						<div className="card w-[20%] rounded-2xl border-2 p-4 bg-[#282828]">
+							<img src="./card1-img.png" alt="" className="rounded-2xl w-full" height={264} />
+							<span>Collection name</span>
+							<h3 className="pb-4">NFT name Ex Shiba Astronaut</h3>
+							<div className="text-white p-3 bg-gray-400 rounded-2xl">
+								<div className="flex items-center justify-between">
+									<span>Price</span>
+									<span>Best offer</span>
+								</div>
+								<div className="flex items-center justify-between">
+									<span>1.0 ETH</span>
+									<span>1.0 ETH</span>
+								</div>
+								<div className="flex items-center justify-between">
+									<span>$130,729.12</span>
+									<span>4hrs left</span>
+								</div>
+							</div>
+						</div>
+						<div className="card w-[20%] rounded-2xl border-2 p-4 bg-[#282828]">
+							<img src="./card1-img.png" alt="" className="rounded-2xl w-full" height={264} />
+							<span>Collection name</span>
+							<h3 className="pb-4">NFT name Ex Shiba Astronaut</h3>
+							<div className="text-white p-3 bg-gray-400 rounded-2xl">
+								<div className="flex items-center justify-between">
+									<span>Price</span>
+									<span>Best offer</span>
+								</div>
+								<div className="flex items-center justify-between">
+									<span>1.0 ETH</span>
+									<span>1.0 ETH</span>
+								</div>
+								<div className="flex items-center justify-between">
+									<span>$130,729.12</span>
+									<span>4hrs left</span>
+								</div>
+							</div>
+						</div>
+						<div className="card w-[20%] rounded-2xl border-2 p-4 bg-[#282828]">
+							<img src="./card1-img.png" alt="" className="rounded-2xl w-full" height={264} />
+							<span>Collection name</span>
+							<h3 className="pb-4">NFT name Ex Shiba Astronaut</h3>
+							<div className="text-white p-3 bg-gray-400 rounded-2xl">
+								<div className="flex items-center justify-between">
+									<span>Price</span>
+									<span>Best offer</span>
+								</div>
+								<div className="flex items-center justify-between">
+									<span>1.0 ETH</span>
+									<span>1.0 ETH</span>
+								</div>
+								<div className="flex items-center justify-between">
+									<span>$130,729.12</span>
+									<span>4hrs left</span>
+								</div>
+							</div>
+						</div>
+						<div className="card w-[20%] rounded-2xl border-2 p-4 bg-[#282828]">
+							<img src="./card1-img.png" alt="" className="rounded-2xl w-full" height={264} />
+							<span>Collection name</span>
+							<h3 className="pb-4">NFT name Ex Shiba Astronaut</h3>
+							<div className="text-white p-3 bg-gray-400 rounded-2xl">
+								<div className="flex items-center justify-between">
+									<span>Price</span>
+									<span>Best offer</span>
+								</div>
+								<div className="flex items-center justify-between">
+									<span>1.0 ETH</span>
+									<span>1.0 ETH</span>
+								</div>
+								<div className="flex items-center justify-between">
+									<span>$130,729.12</span>
+									<span>4hrs left</span>
+								</div>
+							</div>
+						</div>
+						<div className="card w-[20%] rounded-2xl border-2 p-4 bg-[#282828]">
+							<img src="./card1-img.png" alt="" className="rounded-2xl w-full" height={264} />
+							<span>Collection name</span>
+							<h3 className="pb-4">NFT name Ex Shiba Astronaut</h3>
+							<div className="text-white p-3 bg-gray-400 rounded-2xl">
+								<div className="flex items-center justify-between">
+									<span>Price</span>
+									<span>Best offer</span>
+								</div>
+								<div className="flex items-center justify-between">
+									<span>1.0 ETH</span>
+									<span>1.0 ETH</span>
+								</div>
+								<div className="flex items-center justify-between">
+									<span>$130,729.12</span>
+									<span>4hrs left</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="container mx-auto mt-10">
+					<div className="flex flex-wrap lg:gap-y-6">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempora qui, nam eius ullam assumenda tenetur dolore? Autem ad, possimus quaerat dignissimos blanditiis est
+						consectetur minima voluptatum debitis, nesciunt voluptas.
+						<div className="card w-full md:w-1/2 lg:w-1/3">
+							<div className="rounded-2xl border-2 p-4 mr-3 bg-[#282828]">
+								<div className="flex justify-between">
+									<div className="w-1/2 pr-3.5">
+										<img src="./card2-img1.png" alt="Ex Shiba Astronaut" className="h-full" />
+									</div>
+									<div className="w-1/2">
+										<div className="flex flex-col">
+											<img src="./card2-img2.png" alt="Floor Price" />
+											<div className="flex mt-3 gap-3">
+												<div className="w-1/2">
+													<img src="./card2-img1.png" alt="Up Arrow" />
+												</div>
+												<div className="w-1/2">
+													<img src="./card2-img1.png" alt="Down Arrow" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div className="card w-full md:w-1/2 lg:w-1/3">
+							<div className="rounded-2xl border-2 p-4 mr-3 bg-[#282828]">
+								<div className="flex justify-between">
+									<div className="w-1/2 pr-3.5">
+										<img src="./card2-img1.png" alt="Ex Shiba Astronaut" className="h-full" />
+									</div>
+									<div className="w-1/2">
+										<div className="flex flex-col">
+											<img src="./card2-img2.png" alt="Floor Price" />
+											<div className="flex mt-3 gap-3">
+												<div className="w-1/2">
+													<img src="./card2-img1.png" alt="Up Arrow" />
+												</div>
+												<div className="w-1/2">
+													<img src="./card2-img1.png" alt="Down Arrow" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div className="card w-full md:w-1/2 lg:w-1/3">
+							<div className="rounded-2xl border-2 p-4 mr-3 bg-[#282828]">
+								<div className="flex justify-between">
+									<div className="w-1/2 pr-3.5">
+										<img src="./card2-img1.png" alt="Ex Shiba Astronaut" className="h-full" />
+									</div>
+									<div className="w-1/2">
+										<div className="flex flex-col">
+											<img src="./card2-img2.png" alt="Floor Price" />
+											<div className="flex mt-3 gap-3">
+												<div className="w-1/2">
+													<img src="./card2-img1.png" alt="Up Arrow" />
+												</div>
+												<div className="w-1/2">
+													<img src="./card2-img1.png" alt="Down Arrow" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="container mx-auto my-10">
+					<div className="flex flex-wrap justify-center xl:justify-start gap-4">
+						<div className="w-[350px] md:w-[48%] lg:w-[23%] xl:w-[24%]">
+							<div className="rounded-2xl border-2 p-4 h-80 w-full bg-[#282828] text-white relative overflow-hidden">
+								<img src="./card2-img1.png" alt="" className="h-[164px] w-[164px] absolute z-10 left-0 bottom-0 rotate-[25deg] -translate-x-16 border-white border-[6px] rounded-2xl" />
+								<img
+									src="./card2-img1.png"
+									alt=""
+									className="h-[174px] w-[174px] absolute z-20 left-40 top-24 rotate-[25deg] -translate-x-16 scale-[1.4] border-white border-[5px] rounded-2xl"
+								/>
+								<img src="./card2-img1.png" alt="" className="h-[164px] w-[164px] absolute z-30 right-0 -top-2 -rotate-[35deg] translate-x-16  border-white border-[6px] rounded-2xl" />
+							</div>
+						</div>
+						<div className="w-[350px] md:w-[48%] lg:w-[23%] xl:w-[24%]">
+							<div className="rounded-2xl border-2 p-4 h-80 w-full bg-[#282828] text-white relative overflow-hidden">
+								<img src="./card2-img1.png" alt="" className="h-[164px] w-[164px] absolute z-10 left-0 bottom-0 rotate-[25deg] -translate-x-16 border-white border-[6px] rounded-2xl" />
+								<img
+									src="./card2-img1.png"
+									alt=""
+									className="h-[174px] w-[174px] absolute z-20 left-40 top-24 rotate-[25deg] -translate-x-16 scale-[1.4] border-white border-[5px] rounded-2xl"
+								/>
+								<img src="./card2-img1.png" alt="" className="h-[164px] w-[164px] absolute z-30 right-0 -top-2 -rotate-[35deg] translate-x-16  border-white border-[6px] rounded-2xl" />
+							</div>
+						</div>
+						<div className="w-[350px] md:w-[48%] lg:w-[23%] xl:w-[24%]">
+							<div className="rounded-2xl border-2 p-4 h-80 w-full bg-[#282828] text-white relative overflow-hidden">
+								<img src="./card2-img1.png" alt="" className="h-[164px] w-[164px] absolute z-10 left-0 bottom-0 rotate-[25deg] -translate-x-16 border-white border-[6px] rounded-2xl" />
+								<img
+									src="./card2-img1.png"
+									alt=""
+									className="h-[174px] w-[174px] absolute z-20 left-40 top-24 rotate-[25deg] -translate-x-16 scale-[1.4] border-white border-[5px] rounded-2xl"
+								/>
+								<img src="./card2-img1.png" alt="" className="h-[164px] w-[164px] absolute z-30 right-0 -top-2 -rotate-[35deg] translate-x-16  border-white border-[6px] rounded-2xl" />
+							</div>
+						</div>
+						<div className="w-[350px] md:w-[48%] lg:w-[23%] xl:w-[24%]">
+							<div className="rounded-2xl border-2 p-4 h-80 w-full bg-[#282828] text-white relative overflow-hidden">
+								<img src="./card2-img1.png" alt="" className="h-[164px] w-[164px] absolute z-10 left-0 bottom-0 rotate-[25deg] -translate-x-16 border-white border-[6px] rounded-2xl" />
+								<img
+									src="./card2-img1.png"
+									alt=""
+									className="h-[174px] w-[174px] absolute z-20 left-40 top-24 rotate-[25deg] -translate-x-16 scale-[1.4] border-white border-[5px] rounded-2xl"
+								/>
+								<img src="./card2-img1.png" alt="" className="h-[164px] w-[164px] absolute z-30 right-0 -top-2 -rotate-[35deg] translate-x-16  border-white border-[6px] rounded-2xl" />
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 		</>
 	)
