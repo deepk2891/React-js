@@ -5,7 +5,7 @@ const Card1 = () => {
 		<>
 			<section className="pt-10">
 				<div className="container mx-auto">
-					<div className="flex">
+					<div className="flex flex-wrap">
 						<div className="card rounded-2xl border-2 p-4 bg-[#282828]">
 							<img src="./card1-img.png" alt="" className="rounded-2xl" height={264} width={224} />
 							<span>Collection name</span>
@@ -48,8 +48,59 @@ const Card1 = () => {
 						<div className="card rounded-2xl border-2 px-4 py-5 bg-[#282828]">
 							<div className="relative min-h-48">
 								<img src="./card3-img1.png" alt="Description of card image 1" />
-								<div className="absolute bottom-0 left-8 z-10 rounded-full h-21 w-21 overflow-hidden">
+								<div className="absolute bottom-9 left-12 z-10 rounded-full h-21 w-21 overflow-hidden">
 									<img src="./card3-img2.png" alt="Description of profile image" className="rounded-full" />
+								</div>
+							</div>
+						</div>
+						<div className="card w-[368px] rounded-2xl border-2 px-4 py-5 bg-[#282828] text-white">
+							<div className="flex justify-between items-center">
+								<div className="flex items-center">
+									<span className="pr-3">1</span>
+									<div className="relative">
+										<img src="./card4-img1.png" alt="Profile picture" className="h-16 w-16 rounded-full" />
+										<img src="./card4-imgVerified.png" alt="Verified badge" className="absolute right-0 bottom-0 h-5 w-5" />
+									</div>
+									<div className="flex flex-col ml-2.5">
+										<span className="font-semibold text-lg">Phuong Pham</span>
+										<div className="flex items-center text-gray-400 pt-1">
+											<img src="./card4-img3.png" alt="" className="h-4 w-4 mr-1" /> <span className="ps-1">2,798</span>
+										</div>
+									</div>
+								</div>
+								<div className="flex flex-col items-end">
+									<div>
+										<img className="h-6 w-6" src="./card4-img4.png" alt="" />
+										{/* <img className="h-6 w-6" src="./card4-img4.png" alt="" /> */}
+										{/* <img className="h-6 w-6" src="./card4-img4.png" alt="" /> */}
+									</div>
+									<span className="text-[12px]">Followed by mikain</span>
+									<span className="text-[12px]">and 2,129 users</span>
+								</div>
+							</div>
+						</div>
+						<div className="card w-[300px] rounded-2xl border-2 overflow-hidden bg-[#282828] text-white">
+							<div className="flex">
+								<div className="w-[40%]">
+									<img src="./card1-img.png" alt="dd" height={122} />
+								</div>
+								<div className="w-1/2">
+									<div className="flex items-center px-4 h-full">
+										<div>
+											<p>This is the collection name - NFT Name</p>
+											<span>by</span>
+											<span>@Someone</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div className="card w-[564px] rounded-2xl border-2 overflow-hidden px-4 py-5 bg-[#282828] text-white">
+							<div className="flex">
+								<img src="./card1-img.png" alt="" className="rounded-2xl h-[328px] w-[352px] mr-8" />
+								<div className="flex flex-col relative ">
+									<img src="./card1-img.png" alt="" className="rounded-2xl h-[160px] w-[172px] mt-10 mb-10" />
+									<img src="./card1-img.png" alt="" className="rounded-2xl h-[120px] w-[128px]" />
 								</div>
 							</div>
 						</div>
