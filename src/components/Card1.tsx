@@ -1,8 +1,22 @@
 import React from "react"
+import Card from "./Custom/Card"
 
 const Card1 = () => {
+	const p = [
+		{ t: "datpan", card: ["./card1-img.png"], amount: 12334, time: "4hrs left" },
+		{ t: "datpan 1", card: ["./card1-img.png", "./card1-img.png", "./card1-img.png", "./card1-img.png"] },
+		{ t: "datpan 2", card: ["./card1-img.png", "./card1-img.png"] },
+		{ t: "datpan 3", card: ["./card1-img.png", "./card1-img.png", "./card1-img.png"] },
+		{ t: "datpan 4", card: ["./card1-img.png", "./card1-img.png", "./card1-img.png", "./card1-img.png", "./card1-img.png", "./card1-img.png", "./card1-img.png"] },
+	]
 	return (
 		<>
+			{p.map((key) => (
+				<>
+					<p>{key.t}</p>
+					<Card img={key.card} amount={key?.amount} />
+				</>
+			))}
 			<section className="pt-10">
 				<div className="container mx-auto">
 					<div className="flex flex-wrap">
@@ -180,99 +194,10 @@ const Card1 = () => {
 								</div>
 							</div>
 						</div>
-						<div className="card w-full md:w-1/2 lg:w-1/3">
-							<div className="rounded-2xl border-2 p-4 mr-3 bg-[#282828]">
-								<div className="flex justify-between">
-									<div className="w-1/2 pr-3.5">
-										<img src="./card2-img1.png" alt="Ex Shiba Astronaut" className="h-full" />
-									</div>
-									<div className="w-1/2">
-										<div className="flex flex-col">
-											<img src="./card2-img2.png" alt="Floor Price" />
-											<div className="flex mt-3 gap-3">
-												<div className="w-1/2">
-													<img src="./card2-img1.png" alt="Up Arrow" />
-												</div>
-												<div className="w-1/2">
-													<img src="./card2-img1.png" alt="Down Arrow" />
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div className="card w-full md:w-1/2 lg:w-1/3">
-							<div className="rounded-2xl border-2 p-4 mr-3 bg-[#282828]">
-								<div className="flex justify-between">
-									<div className="w-1/2 pr-3.5">
-										<img src="./card2-img1.png" alt="Ex Shiba Astronaut" className="h-full" />
-									</div>
-									<div className="w-1/2">
-										<div className="flex flex-col">
-											<img src="./card2-img2.png" alt="Floor Price" />
-											<div className="flex mt-3 gap-3">
-												<div className="w-1/2">
-													<img src="./card2-img1.png" alt="Up Arrow" />
-												</div>
-												<div className="w-1/2">
-													<img src="./card2-img1.png" alt="Down Arrow" />
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 				<div className="container mx-auto my-10">
 					<div className="flex flex-wrap justify-center xl:justify-start gap-4">
-						<div className="w-[350px] md:w-[48%] lg:w-[23%] xl:w-[24%]">
-							<div className="rounded-2xl border-2 p-4 h-80 w-full bg-[#282828] text-white relative overflow-hidden">
-								<img src="./card2-img1.png" alt="" className="h-[164px] w-[164px] absolute z-10 left-0 bottom-0 rotate-[25deg] -translate-x-16 border-white border-[6px] rounded-2xl" />
-								<img
-									src="./card2-img1.png"
-									alt=""
-									className="h-[174px] w-[174px] absolute z-20 left-40 top-24 rotate-[25deg] -translate-x-16 scale-[1.4] border-white border-[5px] rounded-2xl"
-								/>
-								<img src="./card2-img1.png" alt="" className="h-[164px] w-[164px] absolute z-30 right-0 -top-2 -rotate-[35deg] translate-x-16  border-white border-[6px] rounded-2xl" />
-								<div className="absolute z-40 bottom-4 left-4 right-4 py-4 px-6 backdrop-blur-sm text-white rounded-2xl flex justify-between">
-									<span>ART</span>
-									<span>28 items</span>
-								</div>
-							</div>
-						</div>
-						<div className="w-[350px] md:w-[48%] lg:w-[23%] xl:w-[24%]">
-							<div className="rounded-2xl border-2 p-4 h-80 w-full bg-[#282828] text-white relative overflow-hidden">
-								<img src="./card2-img1.png" alt="" className="h-[164px] w-[164px] absolute z-10 left-0 bottom-0 rotate-[25deg] -translate-x-16 border-white border-[6px] rounded-2xl" />
-								<img
-									src="./card2-img1.png"
-									alt=""
-									className="h-[174px] w-[174px] absolute z-20 left-40 top-24 rotate-[25deg] -translate-x-16 scale-[1.4] border-white border-[5px] rounded-2xl"
-								/>
-								<img src="./card2-img1.png" alt="" className="h-[164px] w-[164px] absolute z-30 right-0 -top-2 -rotate-[35deg] translate-x-16  border-white border-[6px] rounded-2xl" />
-								<div className="absolute z-40 bottom-4 left-4 right-4 py-4 px-6 backdrop-blur-sm text-white rounded-2xl flex justify-between">
-									<span>ART</span>
-									<span>28 items</span>
-								</div>
-							</div>
-						</div>
-						<div className="w-[350px] md:w-[48%] lg:w-[23%] xl:w-[24%]">
-							<div className="rounded-2xl border-2 p-4 h-80 w-full bg-[#282828] text-white relative overflow-hidden">
-								<img src="./card2-img1.png" alt="" className="h-[164px] w-[164px] absolute z-10 left-0 bottom-0 rotate-[25deg] -translate-x-16 border-white border-[6px] rounded-2xl" />
-								<img
-									src="./card2-img1.png"
-									alt=""
-									className="h-[174px] w-[174px] absolute z-20 left-40 top-24 rotate-[25deg] -translate-x-16 scale-[1.4] border-white border-[5px] rounded-2xl"
-								/>
-								<img src="./card2-img1.png" alt="" className="h-[164px] w-[164px] absolute z-30 right-0 -top-2 -rotate-[35deg] translate-x-16  border-white border-[6px] rounded-2xl" />
-								<div className="absolute z-40 bottom-4 left-4 right-4 py-4 px-6 backdrop-blur-sm text-white rounded-2xl flex justify-between">
-									<span>ART</span>
-									<span>28 items</span>
-								</div>
-							</div>
-						</div>
 						<div className="w-[350px] md:w-[48%] lg:w-[23%] xl:w-[24%]">
 							<div className="rounded-2xl border-2 p-4 h-80 w-full bg-[#282828] text-white relative overflow-hidden">
 								<img src="./card2-img1.png" alt="" className="h-[164px] w-[164px] absolute z-10 left-0 bottom-0 rotate-[25deg] -translate-x-16 border-white border-[6px] rounded-2xl" />
