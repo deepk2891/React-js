@@ -108,7 +108,7 @@ const Card1 = () => {
 				</div>
 				<div className="container mx-auto mt-10">
 					<div className="flex flex-wrap gap-6">
-						<div className="card w-[20%] rounded-2xl border-2 p-4 bg-[#282828]">
+						<div className="card w-[256px] rounded-2xl border-2 p-4 bg-[#282828]">
 							<img src="./card1-img.png" alt="" className="rounded-2xl w-full" height={264} />
 							<span>Collection name</span>
 							<h3 className="pb-4">NFT name Ex Shiba Astronaut</h3>
@@ -127,64 +127,7 @@ const Card1 = () => {
 								</div>
 							</div>
 						</div>
-						<div className="card w-[20%] rounded-2xl border-2 p-4 bg-[#282828]">
-							<img src="./card1-img.png" alt="" className="rounded-2xl w-full" height={264} />
-							<span>Collection name</span>
-							<h3 className="pb-4">NFT name Ex Shiba Astronaut</h3>
-							<div className="text-white p-3 bg-gray-400 rounded-2xl">
-								<div className="flex items-center justify-between">
-									<span>Price</span>
-									<span>Best offer</span>
-								</div>
-								<div className="flex items-center justify-between">
-									<span>1.0 ETH</span>
-									<span>1.0 ETH</span>
-								</div>
-								<div className="flex items-center justify-between">
-									<span>$130,729.12</span>
-									<span>4hrs left</span>
-								</div>
-							</div>
-						</div>
-						<div className="card w-[20%] rounded-2xl border-2 p-4 bg-[#282828]">
-							<img src="./card1-img.png" alt="" className="rounded-2xl w-full" height={264} />
-							<span>Collection name</span>
-							<h3 className="pb-4">NFT name Ex Shiba Astronaut</h3>
-							<div className="text-white p-3 bg-gray-400 rounded-2xl">
-								<div className="flex items-center justify-between">
-									<span>Price</span>
-									<span>Best offer</span>
-								</div>
-								<div className="flex items-center justify-between">
-									<span>1.0 ETH</span>
-									<span>1.0 ETH</span>
-								</div>
-								<div className="flex items-center justify-between">
-									<span>$130,729.12</span>
-									<span>4hrs left</span>
-								</div>
-							</div>
-						</div>
-						<div className="card w-[20%] rounded-2xl border-2 p-4 bg-[#282828]">
-							<img src="./card1-img.png" alt="" className="rounded-2xl w-full" height={264} />
-							<span>Collection name</span>
-							<h3 className="pb-4">NFT name Ex Shiba Astronaut</h3>
-							<div className="text-white p-3 bg-gray-400 rounded-2xl">
-								<div className="flex items-center justify-between">
-									<span>Price</span>
-									<span>Best offer</span>
-								</div>
-								<div className="flex items-center justify-between">
-									<span>1.0 ETH</span>
-									<span>1.0 ETH</span>
-								</div>
-								<div className="flex items-center justify-between">
-									<span>$130,729.12</span>
-									<span>4hrs left</span>
-								</div>
-							</div>
-						</div>
-						<div className="card w-[20%] rounded-2xl border-2 p-4 bg-[#282828]">
+						<div className="card w-[256px] rounded-2xl border-2 p-4 bg-[#282828]">
 							<img src="./card1-img.png" alt="" className="rounded-2xl w-full" height={264} />
 							<span>Collection name</span>
 							<h3 className="pb-4">NFT name Ex Shiba Astronaut</h3>
@@ -222,8 +165,14 @@ const Card1 = () => {
 												<div className="w-1/2">
 													<img src="./card2-img1.png" alt="Up Arrow" />
 												</div>
-												<div className="w-1/2">
+												<div className="w-1/2 relative">
 													<img src="./card2-img1.png" alt="Down Arrow" />
+													<span
+														className="absolute top-0 h-full w-full rounded-md text-2xl font-bold text-white flex justify-center items-center"
+														style={{ backgroundColor: "rgba(75, 107, 143, 0.4)" }}
+													>
+														+12
+													</span>
 												</div>
 											</div>
 										</div>
@@ -288,6 +237,10 @@ const Card1 = () => {
 									className="h-[174px] w-[174px] absolute z-20 left-40 top-24 rotate-[25deg] -translate-x-16 scale-[1.4] border-white border-[5px] rounded-2xl"
 								/>
 								<img src="./card2-img1.png" alt="" className="h-[164px] w-[164px] absolute z-30 right-0 -top-2 -rotate-[35deg] translate-x-16  border-white border-[6px] rounded-2xl" />
+								<div className="absolute z-40 bottom-4 left-4 right-4 py-4 px-6 backdrop-blur-sm text-white rounded-2xl flex justify-between">
+									<span>ART</span>
+									<span>28 items</span>
+								</div>
 							</div>
 						</div>
 						<div className="w-[350px] md:w-[48%] lg:w-[23%] xl:w-[24%]">
@@ -299,6 +252,10 @@ const Card1 = () => {
 									className="h-[174px] w-[174px] absolute z-20 left-40 top-24 rotate-[25deg] -translate-x-16 scale-[1.4] border-white border-[5px] rounded-2xl"
 								/>
 								<img src="./card2-img1.png" alt="" className="h-[164px] w-[164px] absolute z-30 right-0 -top-2 -rotate-[35deg] translate-x-16  border-white border-[6px] rounded-2xl" />
+								<div className="absolute z-40 bottom-4 left-4 right-4 py-4 px-6 backdrop-blur-sm text-white rounded-2xl flex justify-between">
+									<span>ART</span>
+									<span>28 items</span>
+								</div>
 							</div>
 						</div>
 						<div className="w-[350px] md:w-[48%] lg:w-[23%] xl:w-[24%]">
@@ -310,6 +267,10 @@ const Card1 = () => {
 									className="h-[174px] w-[174px] absolute z-20 left-40 top-24 rotate-[25deg] -translate-x-16 scale-[1.4] border-white border-[5px] rounded-2xl"
 								/>
 								<img src="./card2-img1.png" alt="" className="h-[164px] w-[164px] absolute z-30 right-0 -top-2 -rotate-[35deg] translate-x-16  border-white border-[6px] rounded-2xl" />
+								<div className="absolute z-40 bottom-4 left-4 right-4 py-4 px-6 backdrop-blur-sm text-white rounded-2xl flex justify-between">
+									<span>ART</span>
+									<span>28 items</span>
+								</div>
 							</div>
 						</div>
 						<div className="w-[350px] md:w-[48%] lg:w-[23%] xl:w-[24%]">
@@ -321,6 +282,40 @@ const Card1 = () => {
 									className="h-[174px] w-[174px] absolute z-20 left-40 top-24 rotate-[25deg] -translate-x-16 scale-[1.4] border-white border-[5px] rounded-2xl"
 								/>
 								<img src="./card2-img1.png" alt="" className="h-[164px] w-[164px] absolute z-30 right-0 -top-2 -rotate-[35deg] translate-x-16  border-white border-[6px] rounded-2xl" />
+								<div className="absolute z-40 bottom-4 left-4 right-4 py-4 px-6 backdrop-blur-sm text-white rounded-2xl flex justify-between">
+									<span>ART</span>
+									<span>28 items</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="container mx-auto">
+					<div className="flex flex-wrap">
+						<div className="card w-[368px] rounded-2xl border-2 px-4 py-5 bg-[#282828] text-white">
+							<div className="flex justify-start items-center">
+								<span className="pr-3">1</span>
+								<div className="relative">
+									<img src="./card4-img1.png" alt="Profile picture" className="h-16 w-16 rounded-full" />
+									<img src="./card4-imgVerified.png" alt="Verified badge" className="absolute right-0 bottom-0 h-5 w-5" />
+								</div>
+								<div className="flex flex-col flex-grow">
+									<div className="flex justify-between items-center pl-3">
+										<span className="font-semibold text-lg line-clamp-1">Phuong Pham</span>
+										<div>
+											<img className="h-6 w-6" src="./card4-img4.png" alt="" />
+										</div>
+									</div>
+									<div className="flex justify-between items-center pl-3">
+										<div className="flex items-center text-gray-400 pt-1">
+											<img src="./card4-img3.png" alt="" className="h-4 w-4 mr-1" /> <span className="ps-1">2,798</span>
+										</div>
+										<div className="flex flex-col">
+											<span className="text-[12px]">Followed by mikain</span>
+											<span className="text-[12px]">and 2,129 users</span>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
