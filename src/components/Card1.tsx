@@ -1,5 +1,6 @@
 import React from "react"
 import Card from "./Custom/Card"
+import Layouts from "./Elements/Layouts"
 
 const Card1 = () => {
 	const p = [
@@ -10,11 +11,11 @@ const Card1 = () => {
 		{ t: "datpan 4", card: ["./card1-img.png", "./card1-img.png", "./card1-img.png", "./card1-img.png", "./card1-img.png", "./card1-img.png", "./card1-img.png"] },
 	]
 	return (
-		<>
+		<Layouts>
 			{p.map((key) => (
 				<>
 					<p>{key.t}</p>
-					<Card img={key.card} amount={key?.amount} />
+					<Card img={key.card} amount={key?.amount} addDiv={<>uhdfjkhkjgfdgdfg</>} />
 				</>
 			))}
 			<section className="pt-10">
@@ -162,6 +163,9 @@ const Card1 = () => {
 						</div>
 					</div>
 				</div>
+
+				{/* --------------------------------------------------------------------------- */}
+
 				<div className="container mx-auto mt-10">
 					<div className="flex flex-wrap lg:gap-y-6">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempora qui, nam eius ullam assumenda tenetur dolore? Autem ad, possimus quaerat dignissimos blanditiis est
@@ -196,6 +200,9 @@ const Card1 = () => {
 						</div>
 					</div>
 				</div>
+
+				{/* --------------------------------------------------------------------------- */}
+
 				<div className="container mx-auto my-10">
 					<div className="flex flex-wrap justify-center xl:justify-start gap-4">
 						<div className="w-[350px] md:w-[48%] lg:w-[23%] xl:w-[24%]">
@@ -215,6 +222,9 @@ const Card1 = () => {
 						</div>
 					</div>
 				</div>
+
+				{/* --------------------------------------------------------------------------- */}
+
 				<div className="container mx-auto">
 					<div className="flex flex-wrap">
 						<div className="card w-[368px] rounded-2xl border-2 px-4 py-5 bg-[#282828] text-white">
@@ -246,7 +256,7 @@ const Card1 = () => {
 					</div>
 				</div>
 			</section>
-		</>
+		</Layouts>
 	)
 }
 

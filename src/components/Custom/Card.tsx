@@ -4,12 +4,14 @@ interface Props {
 	img: string[]
 	amount?: number
 	time?: string
+	addDiv?: any
 }
 
 const Card: React.FC<Props> = (props) => {
-	const { img, amount, time } = props
+	const { img, amount, time, addDiv } = props
 	return (
 		<div className="card w-[256px] rounded-2xl border-2 p-4 bg-[#282828]">
+			{addDiv}
 			{img.length === 1 ? (
 				<img src={img[0]} alt="" className="rounded-2xl w-full" height={264} />
 			) : img.length === 2 ? (
@@ -65,7 +67,6 @@ const Card: React.FC<Props> = (props) => {
 					</div>
 				</div>
 			)}
-
 			<span>Collection name</span>
 			<h3 className="pb-4">NFT name Ex Shiba Astronaut</h3>
 			<div className="text-white p-3 bg-gray-400 rounded-2xl">

@@ -20,6 +20,8 @@ import StateClassComponent from "./components/StateClassComponent"
 import List from "./components/List"
 import LocalStorage from "./components/LocalStorage"
 import Card1 from "./components/Card1"
+// import Index1 from "./components/Index1"
+// import Layouts from "./components/Elements/Layouts"
 
 const App = () => {
 	return (
@@ -50,6 +52,8 @@ const App = () => {
 							<List />
 							<LocalStorage />
 							<Card1 />
+							{/* <Index1 /> */}
+							{/* <Layouts /> */}
 						</>
 					}
 				/>

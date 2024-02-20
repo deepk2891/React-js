@@ -87,28 +87,28 @@ const data = [
 	},
 	{
 		id: 13,
-		name: "Wings",
+		name: "Chilly Pasta",
 		category: "pasta",
 		image: "https://images.unsplash.com/photo-1611270629569-8b357cb88da9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 		price: 499,
 	},
 	{
 		id: 14,
-		name: "Baked Chicken",
+		name: "Baked Pasta",
 		category: "pasta",
 		image: "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBhc3RhfGVufDB8fDB8fHww",
 		price: 749,
 	},
 	{
 		id: 15,
-		name: "Chicken Tenders",
+		name: "Cheeze Pasta",
 		category: "pasta",
 		image: "https://images.unsplash.com/photo-1608897013039-887f21d8c804?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cGFzdGF8ZW58MHx8MHx8fDA%3D",
 		price: 999,
 	},
 	{
 		id: 16,
-		name: "Chicken Kabob",
+		name: "Popcorn Pasta",
 		category: "pasta",
 		image: "https://media.istockphoto.com/id/862762848/photo/pasta-in-a-cast-iron-pan-shot-on-rustic-wooden-table.webp?b=1&s=170667a&w=0&k=20&c=u7Kpzb0C5z5mlyAXJ297bg-tiyFxmQikRDHRm0Jdm64=",
 		price: 1099,
@@ -184,7 +184,7 @@ const Food = () => {
 							</button>
 						</div>
 					</div>
-					<div className="font-bold text-gray-700">
+					{/* <div className="font-bold text-gray-700">
 						<p className="font-bold text-gray-700">Search Name</p>
 						<input
 							onChange={(e) => {
@@ -195,7 +195,7 @@ const Food = () => {
 							name="name"
 							className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 px-2 leading-8"
 						/>
-					</div>
+					</div> */}
 					<div>
 						<p className="font-bold text-gray-700">Filter Price</p>
 						<div className="flex justify-between max-w-[390px] w-full">
