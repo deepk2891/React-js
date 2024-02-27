@@ -238,7 +238,7 @@ const Card1 = () => {
 									<div className="flex justify-between items-center pl-3">
 										<span className="font-semibold text-lg line-clamp-1">Phuong Pham</span>
 										<div>
-											<img className="h-6 w-6" src="./card4-img4.png" alt="" />
+											<img className="h-6 w-6" src="/Image/blog/Blogdetailicon.png" alt="" />
 										</div>
 									</div>
 									<div className="flex justify-between items-center pl-3">

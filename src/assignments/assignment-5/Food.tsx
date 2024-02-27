@@ -118,9 +118,6 @@ const data = [
 const Food = () => {
 	const [foods, setFoods] = useState(data)
 
-	const [minPrice, setMinPrice] = useState(0)
-	const [maxPrice, setMaxPrice] = useState(1250)
-
 	// Filter Type Burger/pizza/etc
 	const filterType = (category) => {
 		if (category === "All") {
@@ -184,7 +181,7 @@ const Food = () => {
 							</button>
 						</div>
 					</div>
-					{/* <div className="font-bold text-gray-700">
+					<div className="font-bold text-gray-700">
 						<p className="font-bold text-gray-700">Search Name</p>
 						<input
 							onChange={(e) => {
@@ -195,7 +192,7 @@ const Food = () => {
 							name="name"
 							className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 px-2 leading-8"
 						/>
-					</div> */}
+					</div>
 					<div>
 						<p className="font-bold text-gray-700">Filter Price</p>
 						<div className="flex justify-between max-w-[390px] w-full">
