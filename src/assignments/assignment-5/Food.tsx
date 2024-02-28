@@ -117,6 +117,8 @@ const data = [
 
 const Food = () => {
 	const [foods, setFoods] = useState(data)
+	const [minPrice, setMinPrice] = useState(0)
+	const [maxPrice, setMaxPrice] = useState(1250)
 
 	// Filter Type Burger/pizza/etc
 	const filterType = (category) => {
@@ -152,8 +154,8 @@ const Food = () => {
 
 	// Search Name
 	const filterName = (name) => {
-		const filterFoods = data.filter((item) => item.name.toLowerCase()).includes(name.toLowerCase())
-		setFoods(filterFoods)
+		const filteredFoods = data.filter((item) => item.name.toLowerCase().includes(name.toLowerCase()))
+		setFoods(filteredFoods)
 	}
 
 	return (
