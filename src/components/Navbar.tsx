@@ -37,7 +37,7 @@ const Navbar = () => {
 						</li>
 						<li>
 							<Link to="/assignment-5" className="whitespace-nowrap">
-								Project <FaStaylinked className="inline" /> Product Filter
+								Assignment-5-8-9 <FaStaylinked className="inline" /> Product Ecom
 							</Link>
 						</li>
 						<li>
@@ -50,6 +50,12 @@ const Navbar = () => {
 							<Link to="/assignment-7" className="whitespace-nowrap">
 								Assignment-7
 								<FaStaylinked className="inline" /> Filter LocalStorage
+							</Link>
+						</li>
+						<li>
+							<Link to="/assignment-10" className="whitespace-nowrap">
+								Assignment-10
+								<FaStaylinked className="inline" /> Login Signup
 							</Link>
 						</li>
 					</ul>
