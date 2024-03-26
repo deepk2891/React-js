@@ -58,6 +58,12 @@ const Navbar = () => {
 								<FaStaylinked className="inline" /> Login Signup
 							</Link>
 						</li>
+						<li>
+							<Link to="/assignment-11" className="whitespace-nowrap">
+								Assignment-11
+								<FaStaylinked className="inline" /> Firebase Crud
+							</Link>
+						</li>
 					</ul>
 				</li>
 			</ul>

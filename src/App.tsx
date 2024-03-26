@@ -11,6 +11,7 @@ import App6 from "./assignments/assignment-6/App6"
 import App7 from "./assignments/assignment-7/App7"
 import App8 from "./assignments/assignment-8/App8"
 import App10 from "./assignments/assignment-10/App10"
+import App11 from "./assignments/assignment-11/App11"
 
 import Login from "./assignments/assignment-10/Login"
 import Signup from "./assignments/assignment-10/Signup"
@@ -43,6 +44,7 @@ const App = () => {
 				<Route path="/assignment-7" element={<App7 />} />
 				<Route path="/assignment-8" element={<App8 />} />
 				<Route path="/assignment-10" element={<App10 />} />
+				<Route path="/assignment-11" element={<App11 />} />
 				{/* Add more routes for other assignments if needed */}
 				<Route path="/login" element={<Login />} />
 				<Route path="/signup" element={<Signup />} />
